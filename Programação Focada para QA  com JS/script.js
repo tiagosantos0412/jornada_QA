@@ -38,3 +38,8 @@ console.log(data)
 
 //Incluindo uma constante
 const pi = 3.15
+
+//alterando dado do objeto
+cadastro.nome = 'Tiago Felipe'
+
+console.log(cadastro)
