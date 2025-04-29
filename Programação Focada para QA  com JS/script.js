@@ -30,3 +30,8 @@ let cadastro = {
 }
 
 console.log(cadastro)
+
+//tipo dada object
+data = new Date("2025-04-29")
+
+console.log(data)
