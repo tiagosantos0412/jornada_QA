@@ -35,3 +35,6 @@ console.log(cadastro)
 data = new Date("2025-04-29")
 
 console.log(data)
+
+//Incluindo uma constante
+const pi = 3.15
