@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - PS5 Games</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GameStore</div>
+        <div class="auth-section" id="authSection">
+            <button class="btn btn-outline" id="loginBtn">Login</button>
+            <button class="btn btn-primary" id="registerBtn">Registrar</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="messageContainer"></div>
+
+        <h1>Jogos para PS5</h1>
+        <div class="products-section" id="productsSection">
+            <!-- Produtos serão inseridos via JavaScript -->
+        </div>
+
+        <div class="cart-section" id="cartSection" style="display: none;">
+            <h2 class="cart-title">Seu Carrinho</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho serão inseridos via JavaScript -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Login/Registro -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Login</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <form id="authForm">
+                <div class="form-group" id="nameGroup" style="display: none;">
+                    <label class="form-label" for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome completo">
+                    <div class="text-danger" id="nameError">Por favor, insira seu nome</div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                    <div class="text-danger" id="emailError">Por favor, insira um email válido</div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Sua senha">
+                    <div class="text-danger" id="passwordError">Por favor, insira sua senha</div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitAuthBtn">Entrar</button>
+                <div style="margin-top: 1rem; text-align: center;">
+                    <a href="#" id="toggleAuth">Não tem uma conta? Registre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
